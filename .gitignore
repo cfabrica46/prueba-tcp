@@ -1,8 +1,8 @@
 prueba-tcp
 prueba-tcp.exe
 
-client
-client.exe
+client/client
+client/client.exe
 
-server
-server.exe
+client/server
+client/server.exe
