@@ -25,12 +25,12 @@ func main() {
 		for {
 			conn, err := l.Accept()
 			if err != nil {
-				fmt.Println("Supuesto Error en Windows:", err)
+				log.Fatal(err)
 			}
 
 			content, err := ioutil.ReadAll(conn)
 			if err != nil {
-				log.Fatal(err)
+				//log.Fatal(err)
 			}
 
 			fmt.Println("Message received:", string(content))
