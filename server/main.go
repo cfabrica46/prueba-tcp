@@ -23,15 +23,20 @@ func main() {
 		fmt.Println("Listening on " + serverAddress)
 		fmt.Println()
 		for {
+			fmt.Println("esperando una conexion...")
 			conn, err := l.Accept()
 			if err != nil {
 				log.Fatal(err)
 			}
+			fmt.Println("conexion recibida/aceptada")
 
+			fmt.Println("leyendo...")
 			content, err := ioutil.ReadAll(conn)
 			if err != nil {
 				//log.Fatal(err)
 			}
+			fmt.Println("se a leido!")
+			fmt.Println()
 
 			fmt.Println("Message received:", string(content))
 
