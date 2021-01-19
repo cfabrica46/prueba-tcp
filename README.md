@@ -5,8 +5,20 @@ Se desarrollara un servidor TCP basico el cual podremos conectarnos usando un cl
 
 ## Run Server
 
-`go build && ./prueba-tcp localhost 8080`
+`cd server/`
+`go build && ./server localhost 8080`
 
 o
 
+`cd server/`
+`go run main.go localhost 8080`
+
+## Run Client
+
+`cd client/`
+`go build && ./client localhost 8080`
+
+o
+
+`cd client/`
 `go run main.go localhost 8080`
