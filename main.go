@@ -25,7 +25,7 @@ func main() {
 		for {
 			conn, err := l.Accept()
 			if err != nil {
-				log.Fatal(err)
+				fmt.Println("Supuesto Error en Windows:", err)
 			}
 
 			content, err := ioutil.ReadAll(conn)
